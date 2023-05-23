@@ -15,6 +15,26 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'gallery',
+    loadChildren: () => import('./gallery/gallery.module').then( m => m.GalleryPageModule)
+  },
+  {
+    path: 'gallery',
+    loadChildren: () => import('./page/gallery/gallery.module').then( m => m.GalleryPageModule)
+  },
+  {
+    path: 'gallery',
+    loadChildren: () => import('./pages/gallery/gallery.module').then( m => m.GalleryPageModule)
+  },
+  {
+    path: 'camera',
+    loadChildren: () => import('./pages/camera/camera.module').then( m => m.CameraPageModule)
+  },
+  {
+    path: 'favourites',
+    loadChildren: () => import('./pages/favourites/favourites.module').then( m => m.FavouritesPageModule)
+  },
 ];
 
 @NgModule({
