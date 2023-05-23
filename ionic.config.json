@@ -1,0 +1,7 @@
+{
+  "name": "GreenGraphSandraLopez",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
